@@ -181,6 +181,15 @@ h4 {
 		flex-direction: row;
 		gap: 4rem;
 	}
+	.infa2 {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+	}
 	.img {
 		height: 25rem;
 		border-radius: 98px;
