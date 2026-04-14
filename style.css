@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #71e7eb63;
+}
+h1 {
+	font-size: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text {
+	display: block;
+	width: 60rem;
+	font-size: 1.3rem;
+}
+h3 {
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h4 {
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img {
+	height: 35rem;
+	border-radius: 98px;
+}
+.img1 {
+	height: 4.4rem;
+}
+.img3 {
+	height: 20rem;
+	border-radius: 63px;
+}
+.img4 {
+	height: 15rem;
+	border-radius: 63px;
+}
+.infa {
+	width: 100%;
+	height: 36rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 10rem;
+}
+.text1 {
+	width: 30rem;
+}
+.text2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.text3 {
+	text-align: center;
+	font-size: 1.1rem;
+}
+.infa2 {
+	width: 100%;
+	height: 6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 13rem;
+}
+.infa3 {
+	width: 30rem;
+	height: 27rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.infa4 {
+	width: 100%;
+	height: 27rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+}
+.strou {
+	display: block;
+	align-items: center;
+	text-align: center;
+}
+/* Переменные для быстрой смены цветов */
+.timeline-section {
+	--line-color: #e2e8f0;
+	--dot-shadow: rgba(108, 92, 231, 0.3);
+	--card-bg: #ffffff;
+	--text-main: #2d3748;
+	--card-radius: 12px;
+	--card-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	max-width: 700px;
+	margin: 0 auto;
+	/*font-family: 'Inter', system-ui, -apple-system, sans-serif;*/
+}
+.timeline {
+	position: relative;
+	padding-left: 40px;
+}
+.timeline-item {
+	position: relative;
+	margin-bottom: 36px;
+}
+.timeline-item:hover .timeline-dot {
+	transform: scale(1.2);
+	box-shadow: 0 0 0 4px var(--dot-shadow);
+}
+/* Карточка с текстом */
+.timeline-content {
+	background: var(--card-bg);
+	padding: 20px 24px;
+	border-radius: var(--card-radius);
+	box-shadow: var(--card-shadow);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background-color: #6cd4ddc4;
+}
+.timeline-item:hover .timeline-content {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.timeline-year {
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #4f41bb;
+	background: rgb(108 92 231 / 31%);
+	padding: 4px 10px;
+	border-radius: 20px;
+	margin-bottom: 8px;
+	letter-spacing: 0.5px;
+}
+.timeline-content h3 {
+	margin: 0 0 8px;
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+.timeline-content p {
+	margin: 0;
+	line-height: 1.6;
+	font-size: 1.2rem;
+}
+/* Адаптив для мобильных */
+@media (max-width: 600px) {
+	.timeline-section {
+		padding: 40px 16px;
+	}
+	.timeline {
+		padding-left: 30px;
+	}
+	.timeline::before {
+		left: 10px;
+		width: 2px;
+	}
+	.timeline-content {
+		padding: 16px 18px;
+	}
+	h1 {
+		font-size: 3rem;
+		align-items: center;
+	}
+	.infa {
+		width: 100%;
+		height: 36rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		gap: 4rem;
+	}
+	.img {
+		height: 25rem;
+		border-radius: 98px;
+	}
+	.text {
+		display: block;
+		width: 373px;
+		font-size: 0.9rem;
+	}
+	h3 {
+		font-size: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	h4 {
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.img3 {
+		height: 15rem;
+		border-radius: 63px;
+	}
+	.infa3 {
+		width: 23rem;
+		height: 25rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.text2 {
+		text-align: center;
+		font-size: 1.3rem;
+	}
+	.infa4 {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0;
+	}
+}
