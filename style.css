@@ -152,6 +152,80 @@ h4 {
 	line-height: 1.6;
 	font-size: 1.2rem;
 }
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    background: #1a1a2e; /* Темный фон как на видео */
+}
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.tech-circle {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech-circle img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    z-index: 2; 
+    filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.5)); 
+}
+.tech-circle::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(138, 43, 226, 0.2); 
+}
+.tech-circle::after {
+    content: '';
+    position: absolute;
+    inset: -2px; 
+    border-radius: 50%;
+    background: conic-gradient(
+    from 0deg, 
+     #fff 0%, 
+    #8a2be2 25%, 
+    transparent 0%
+    );
+  mask: radial-gradient(farthest-side, transparent 94%, #fff 95%);
+  -webkit-mask: radial-gradient(farthest-side, transparent 94%, #fff 95%);
+  opacity: 0; 
+  pointer-events: none;
+}
+/* Класс, который добавляет JS при появлении на экране */
+.tech-circle.active::after {
+  opacity: 1;
+  animation: spinOnce 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+/* Ключевые кадры анимации */
+@keyframes spinOnce {
+0% {
+ transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+  opacity: 0; /* Исчезает после полного оборота */
+}
+}
+.skill-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.8); /* Неоновое свечение текста */
+}
 /* Адаптив для мобильных */
 @media (max-width: 600px) {
 	.timeline-section {
