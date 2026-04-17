@@ -249,11 +249,9 @@ h4 {
 	border-radius: 8px;
 	cursor: zoom-in;
 	transition: transform 0.2s;
-   transform: rotate(90deg);
 }
 .slide img:hover {
 	transform: scale(1.02);
-   transform: rotate(90deg);
 }
 .btn-nav {
 	position: absolute;
@@ -463,7 +461,6 @@ h4 {
 	border-radius: 8px;
 	cursor: zoom-in;
 	transition: transform 0.2s;
-  transform: rotate(90deg);
 }
 .img5 {
 	padding-right: 55px;
