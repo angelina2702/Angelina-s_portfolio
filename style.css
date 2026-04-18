@@ -386,6 +386,12 @@ h5 {
 	align-items: center;
 	flex-direction: column;
 }
+.socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 600px) {
 	.timeline::before {
 		left: 10px;
@@ -403,6 +409,12 @@ h5 {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+	.socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 	.timeline-content {
 		padding: 16px 18px;
