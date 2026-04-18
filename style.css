@@ -379,8 +379,12 @@ h5 {
 	justify-content: center;
 	align-items: center;
 }
-.f{
+.fa{
 	width: 57rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 @media (max-width: 600px) {
 	.timeline::before {
@@ -393,8 +397,12 @@ h5 {
 	justify-content: center;
 	align-items: center;
 }
-.f{
+.fa{
 	width: 23rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 	.timeline-content {
 		padding: 16px 18px;
