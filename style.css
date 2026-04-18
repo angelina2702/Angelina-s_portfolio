@@ -279,6 +279,15 @@ h5 {
 .btn-next {
 	right: 1.5rem;
 }
+.img5 {
+	padding-right: 55px;
+}
+.img6 {
+	padding-left: 45px;
+}
+.img7 {
+	padding-left: 140px;
+}
 .dots {
 	display: flex;
 	justify-content: center;
@@ -468,7 +477,7 @@ h5 {
 		padding-right: 55px;
 	}
 	.img6 {
-		padding-right: 135px;
+		padding-right: 150px;
 	}
 	.img7 {
 		padding-right: 225px;
@@ -501,10 +510,10 @@ h5 {
 		right: 1rem;
 	}
 	.dots {
-		display: none;
+		display: 3rem;
 	}
 	.dot {
-		display: none;
+		display: 2rem;
 	}
 	.dot.active {
 		background: rgb(156 181 225);
