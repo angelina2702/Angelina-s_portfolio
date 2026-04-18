@@ -177,8 +177,7 @@ h4 {
 	justify-content: center;
 }
 .tech-circle img {
-	width: 60%;
-	height: 60%;
+	height: 3rem;
 	object-fit: contain;
 	z-index: 2;
 	filter: drop-shadow(0 0 5px rgba(138, 43, 226, 0.5));
@@ -188,32 +187,30 @@ h4 {
 	position: absolute;
 	inset: 0;
 	border-radius: 50%;
-	border: 2px solid rgba(138, 43, 226, 0.2);
+	border: 2px solid rgb(23 217 245 / 59%);
 }
 .tech-circle::after {
 	content: "";
 	position: absolute;
 	inset: -2px;
 	border-radius: 50%;
-	background: conic-gradient(from 0deg, #fff 0%, #8a2be2 25%, transparent 0%);
+	background: conic-gradient(from 0deg, #fff 0%, #099bf0 25%, transparent 0%);
 	mask: radial-gradient(farthest-side, transparent 94%, #fff 95%);
 	-webkit-mask: radial-gradient(farthest-side, transparent 94%, #fff 95%);
 	opacity: 0;
 	pointer-events: none;
 }
-/* Класс, который добавляет JS при появлении на экране */
 .tech-circle.active::after {
 	opacity: 1;
 	animation: spinOnce 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-/* Ключевые кадры анимации */
 @keyframes spinOnce {
 	0% {
 		transform: rotate(0deg);
 	}
 	100% {
 		transform: rotate(360deg);
-		opacity: 0; /* Исчезает после полного оборота */
+		opacity: 0;
 	}
 }
 .skill-name {
@@ -390,17 +387,17 @@ h4 {
 		padding-left: 10px;
 	}
 	h3 {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		align-items: center;
 	}
 	h4 {
-		font-size: 1rem;
+		font-size: 0.9rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 	.img3 {
-		height: 15rem;
+		height: 13rem;
 		border-radius: 63px;
 	}
 	.img4 {
@@ -409,7 +406,7 @@ h4 {
 	}
 	.infa3 {
 		width: 23rem;
-		height: 25rem;
+		height: 18rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -417,7 +414,11 @@ h4 {
 	}
 	.text2 {
 		text-align: center;
-		font-size: 1.3rem;
+		font-size: 0.9rem;
+	}
+	.text3 {
+		text-align: center;
+		font-size: 0.7rem;
 	}
 	.infa4 {
 		width: 100%;
@@ -503,7 +504,6 @@ h4 {
 	.dot.active {
 		background: rgb(156 181 225);
 	}
-	/* Модальное окно */
 	.modal {
 		display: none;
 		position: fixed;
