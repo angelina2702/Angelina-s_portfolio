@@ -354,7 +354,21 @@ h5 {
 	padding-left: 30px;
 	font-family: none;
 }
-/* Адаптив для мобильных */
+.img8 {
+	height: 3rem;
+}
+.text4 {
+	text-align: center;
+	font-size: 2rem;
+}
+.social {
+	width: 12rem;
+	height: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
 @media (max-width: 600px) {
 	.timeline::before {
 		left: 10px;
@@ -582,5 +596,20 @@ h5 {
 		margin: 0;
 		line-height: 1.6;
 		font-size: 1rem;
+	}
+	.img8 {
+		height: 2rem;
+	}
+	.text4 {
+		text-align: center;
+		font-size: 1rem;
+	}
+	.social {
+		width: 7rem;
+		height: 3.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 }
