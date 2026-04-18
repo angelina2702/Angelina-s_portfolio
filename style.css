@@ -373,11 +373,29 @@ h5 {
 	align-items: center;
 	flex-direction: column;
 }
+.r{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.f{
+	width: 57rem;
+}
 @media (max-width: 600px) {
 	.timeline::before {
 		left: 10px;
 		width: 2px;
 	}
+	.r{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.f{
+	width: 23rem;
+}
 	.timeline-content {
 		padding: 16px 18px;
 	}
