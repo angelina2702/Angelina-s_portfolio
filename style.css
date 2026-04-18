@@ -114,7 +114,6 @@ h5 {
 }
 .timeline {
 	position: relative;
-	padding-left: 40px;
 }
 .timeline-item {
 	position: relative;
@@ -151,7 +150,6 @@ h5 {
 	letter-spacing: 0.5px;
 }
 .timeline-content h3 {
-	margin: 0 0 8px;
 	font-size: 1.6rem;
 	font-weight: 600;
 }
@@ -345,12 +343,6 @@ h5 {
 }
 /* Адаптив для мобильных */
 @media (max-width: 600px) {
-	.timeline-section {
-		padding: 40px 16px;
-	}
-	.timeline {
-		padding-left: 30px;
-	}
 	.timeline::before {
 		left: 10px;
 		width: 2px;
@@ -541,5 +533,40 @@ h5 {
 		cursor: pointer;
 		background: none;
 		border: none;
+	}
+	.timeline-content {
+		background: var(--card-bg);
+		padding: 7px 10px;
+		border-radius: var(--card-radius);
+		box-shadow: var(--card-shadow);
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
+		background-color: #6cd4ddc4;
+	}
+	.timeline-item:hover .timeline-content {
+		transform: translateY(-3px);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+	}
+	.timeline-year {
+		display: inline-block;
+		font-size: 0.9rem;
+		font-weight: 600;
+		color: #4f41bb;
+		background: rgb(108 92 231 / 31%);
+		padding: 1px 5px;
+		border-radius: 20px;
+		margin-bottom: 8px;
+		letter-spacing: 0.5px;
+	}
+	.timeline-content h3 {
+		font-size: 1.2rem;
+		font-weight: 600;
+		padding-bottom: 10px;
+	}
+	.timeline-content p {
+		margin: 0;
+		line-height: 1.6;
+		font-size: 1rem;
 	}
 }
