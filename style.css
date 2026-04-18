@@ -474,13 +474,13 @@ h5 {
 		transition: transform 0.2s;
 	}
 	.img5 {
-		padding-right: 55px;
+		padding-right: 65px;
 	}
 	.img6 {
-		padding-right: 150px;
+		padding-right: 190px;
 	}
 	.img7 {
-		padding-right: 225px;
+		padding-right: 370px;
 	}
 	.slide img:hover {
 		transform: scale(1.02);
