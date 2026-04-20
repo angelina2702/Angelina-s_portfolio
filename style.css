@@ -34,8 +34,9 @@ h5 {
 	align-items: center;
 }
 .img {
-	height: 35rem;
-	border-radius: 98px;
+    height: 35rem;
+    display: block; /* Убираем отступы снизу у картинки */
+    transition: transform 0.3s ease; /* Плавность для самой картинки */
 }
 .img1 {
 	height: 4.4rem;
@@ -258,6 +259,60 @@ h5 {
 .tech-circle.active::after {
 	opacity: 1;
 	animation: spinOnce 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+.photo-wrapper {
+    position: relative; 
+    display: inline-block;
+    border-radius: 98px; 
+    overflow: hidden; /
+}
+.hover-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding-bottom: 40px; 
+    opacity: 0; 
+    transition: all 0.4s ease;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%); 
+    pointer-events: none; 
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(20px); 
+    transition: transform 0.4s ease;
+}
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background: rgb(60 229 223 / 72%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s;
+}
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+.photo-wrapper:hover .hover-overlay {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+.photo-wrapper:hover .social-icons {
+    transform: translateY(0); 
+}
+.photo-wrapper:hover .img {
+    transform: scale(1.05); 
 }
 @keyframes spinOnce {
 	0% {
@@ -1296,4 +1351,7 @@ h5 {
 		align-items: center;
 		flex-direction: column;
 	}
+	.hover-overlay {
+    display: none !important; 
+}
 }
