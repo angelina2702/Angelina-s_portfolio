@@ -1224,12 +1224,14 @@ h5 {
 		justify-content: center;
 		align-items: center;
 	}
-	.img3 {
+		.img3 {
 		height: 13rem;
+        width: 13rem;
 		border-radius: 63px;
 	}
 	.img4 {
 		height: 11rem;
+        width: 11rem;
 		border-radius: 63px;
 	}
 	.infa3 {
