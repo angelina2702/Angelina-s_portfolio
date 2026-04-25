@@ -239,6 +239,32 @@
 				<img id="modal-img" src="" alt="Увеличенное изображение" />
 			</div>
 			</div>
+            <div class="contact">
+            <section id="contact" class="contact-section">
+    <h2>Связаться со мной</h2>
+    <p>Оставьте сообщение, и я отвечу вам в ближайшее время.</p>
+    <div class="contact-form">
+    <form method="POST">
+    <label for="name">Ваше ФИО</label>
+    <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+    
+    <label for="tel">Ваш номер телефона</label>
+    <input type="tel" id="tel" name="phone" placeholder="+375 29 *******" 
+           pattern="\+375\d{9}" required>
+    
+    <label for="message">Сообщение</label>
+    <textarea id="message" name="message" rows="4" 
+              placeholder="У вас есть идея? Расскажите о ней и я вам помогу её реализовать" 
+              required></textarea>
+    
+    <!-- Защита от спама -->
+    <input type="text" name="_gotcha" style="display:none">
+    
+    <button type="submit">Отправить сообщение</button>
+</form>
+</div>
+</section></div>
+
 			<div class="socials">
 				<div class="social">
 				<p class="text4">Мои соцсети</p>
