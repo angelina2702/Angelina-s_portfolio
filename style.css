@@ -690,12 +690,7 @@ h5 {
 	.img5 {
 		padding-right: 65px;
 	}
-	.img6 {
-		padding-right: 140px;
-	}
-	.img7 {
-		padding-right: 220px;
-	}
+	
 	.slide img:hover {
 		transform: scale(1.02);
 	}
