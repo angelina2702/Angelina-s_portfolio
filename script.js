@@ -113,3 +113,43 @@ function handleKeyDown(e) {
     }
 }
 document.addEventListener("keydown", handleKeyDown);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    form.addEventListener("submit", formSend);
+    
+    const TOKEN = "8777081741:AAFndmuThmCGeKDZgUJyBdj1NAWcLeRjdKw";
+    const CHAT_ID = "5374624860";
+    const API_URL = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+    async function formSend(event) {
+        event.preventDefault();
+        
+        // ✅ Правильные селекторы
+        let userName = document.querySelector('input[name="name"]').value;
+        let userPhone = document.querySelector('input[name="phone"]').value;
+        let userMessage = document.querySelector('textarea[name="message"]').value;
+
+        let message =`Новая заявка!\n\n👤 ФИО: ${userName}\n📱 Телефон: ${userPhone}\n💬 Сообщение: ${userMessage}` ;  
+     
+        try {
+            const response = await fetch(API_URL, {   
+                method: "POST",    
+                headers: {"Content-type": "application/json"},    
+                body: JSON.stringify({ chat_id: CHAT_ID, text: message}),  
+            });  
+            
+            const result = await response.json(); 
+            
+            if (result.ok) {   
+                alert("Ваше сообщение отправлено. С вами свяжутся в ближайшее время");    
+                form.reset();  
+            } else {
+                alert("Ошибка отправки: " + (result.description || "неизвестная"));
+            }
+        } catch (error) {
+            console.error("Ошибка:", error);
+            alert("Не удалось отправить сообщение. Проверьте консоль.");
+        }
+    }
+});
