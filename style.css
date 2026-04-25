@@ -1437,13 +1437,13 @@ h5 {
     text-align: center;
     color: #64748b;
     margin-bottom: 19px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .contact-form label {
     display: block;
     margin-bottom: 4px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .contact-form input,
 .contact-form textarea {
@@ -1453,7 +1453,7 @@ h5 {
     margin-bottom: 10px;
     border: 1.5px solid #2d7eeb;
     border-radius: 14px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: all 0.3s ease;
     box-sizing: border-box;
     outline: none;
