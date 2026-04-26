@@ -145,7 +145,7 @@ h5 {
 	--text-main: #2d3748;
 	--card-radius: 12px;
 	--card-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-	max-width: 700px;
+	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
