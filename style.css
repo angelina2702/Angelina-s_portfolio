@@ -63,6 +63,12 @@ h5 {
   padding-bottom: 1rem;
 	padding-top: 1rem;
 }
+.blok4{
+	display: block;
+	background-color: #a9edf3;;
+  padding-bottom: 1rem;
+	padding-top: 1rem;
+}
 .img {
 	height: 35rem;
 	border-radius: 98px;
