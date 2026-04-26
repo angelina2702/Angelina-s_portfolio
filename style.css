@@ -80,7 +80,9 @@ h5 {
 	height: 17rem;
 	width: 17rem;
 	border-radius: 63px;
+	object-fit: cover;
 }
+
 .img4 {
 	height: 17rem;
 	width: 17rem;
@@ -492,7 +494,6 @@ h5 {
 }
 .contact-section p {
     text-align: center;
-    color: #64748b;
     margin-bottom: 19px;
     font-size: 1.8rem;
 }
@@ -500,12 +501,13 @@ h5 {
     display: block;
     margin-bottom: 4px;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+		color: #64748b;
 }
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 16px 20px;
+    padding: 9px 16px;
     margin-bottom: 27px;
     border: 1.5px solid #2d7eeb;
     border-radius: 14px;
@@ -528,7 +530,7 @@ h5 {
     color: white;
     border: none;
     border-radius: 14px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
