@@ -44,6 +44,8 @@ h5 {
 .port{
 	display: block;
 	background-color: #a9edf3;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
 }
 .blok{
 	width: 100%;
@@ -919,6 +921,8 @@ h5 {
 	.port{
 	display: block;
 	background-color: #a9edf3;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
 }
 .blok{
 	width: 100%;
