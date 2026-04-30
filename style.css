@@ -150,6 +150,17 @@ h5 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.infa3:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.infa3 img {
+    transition: transform 0.3s ease;
+}
+.infa3:hover img {
+    transform: scale(1.03);
 }
 .infa4 {
 	width: 100%;
@@ -1012,7 +1023,18 @@ h5 {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
+	   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.infa3:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.infa3 img {
+    transition: transform 0.3s ease;
+}
+.infa3:hover img {
+    transform: scale(1.03);
+}
 	.text2 {
 		text-align: center;
 		font-size: 0.9rem;
