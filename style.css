@@ -491,6 +491,9 @@ h5 {
 .img8 {
 	height: 3rem;
 }
+.img8:hover {
+	animation: shakeX .55s;
+}
 .text4 {
 	text-align: center;
 	font-size: 2rem;
@@ -1251,6 +1254,9 @@ h5 {
 	.img8 {
 		height: 2rem;
 	}
+	.img8:hover {
+	animation: shakeX .55s;
+}
 	.text4 {
 		text-align: center;
 		font-size: 1rem;
