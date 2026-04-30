@@ -1085,61 +1085,6 @@ h4 {
 .img7 {
 	padding-right: 370px;
 }
-.slide img:hover {
-	transform: scale(1.02);
-}
-.btn-nav {
-	height: 25px;
-	width: 25px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background: white;
-	border: none;
-	border-radius: 50%;
-	font-size: 2rem;
-	cursor: pointer;
-	box-shadow: 0 2px 7px 6px rgb(156 181 225);
-	z-index: 10;
-	display: flex;
-    align-items: center;
-	justify-content: center;
-	user-select: none;
-}
-.btn-prev {
-	left: 1rem;
-}
-.btn-next {
-	right: 1rem;
-}
-.dots {
-	display: 3rem;
-}
-.dot {
-	display: 2rem;
-}
-.dot.active {
-	background: rgb(156 181 225);
-}
-.modal {
-	display: none;
-	position: fixed;
-	inset: 0;
-	background: rgba(0, 0, 0, 0.9);
-	z-index: 1000;
-	justify-content: center;
-	align-items: center;
-}
-.modal.open {
-	display: flex;
-}
-.modal img {
-	max-width: 95%;
-	max-height: 90vh;
-	object-fit: contain;
-	border-radius: 4px;
-	cursor: zoom-out;
-}
 .close {
 	position: absolute;
 	top: 20px;
@@ -1400,7 +1345,7 @@ h1 {
 	transform: translateY(-50%);
 	background: white;
 	border: none;
-    border-radius: 50%;
+	border-radius: 50%;
 	font-size: 2rem;
 	cursor: pointer;
 	box-shadow: 0 2px 7px 6px rgb(156 181 225);
@@ -1417,7 +1362,7 @@ h1 {
 	right: 1rem;
 }
 .dots {
-    display: 3rem;
+	display: 3rem;
 }
 .dot {
 	display: 2rem;
@@ -1443,6 +1388,16 @@ h1 {
 	object-fit: contain;
 	border-radius: 4px;
 	cursor: zoom-out;
+}
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: white;
+	font-size: 32px;
+	cursor: pointer;
+	background: none;
+	border: none;
 }
 .social {
 	width: 7rem;
