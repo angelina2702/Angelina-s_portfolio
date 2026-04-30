@@ -18,6 +18,7 @@
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
+
 .photo-wrapper:hover .social-icons a {
     animation: gentlePulse 2s infinite ease-in-out;
 }
@@ -25,10 +26,13 @@
 .photo-wrapper:hover .social-icons a:nth-child(3) { animation-delay: 0.4s; }
 
 .socials .social div a {
+    transition: transform 0.3s ease;
+}
+.socials .social div a:hover {
     animation: gentlePulse 2s infinite ease-in-out;
 }
-.socials .social div a:nth-child(2) { animation-delay: 0.2s; }
-.socials .social div a:nth-child(3) { animation-delay: 0.4s; }
+.socials .social div a:nth-child(2):hover { animation-delay: 0.2s; }
+.socials .social div a:nth-child(3):hover { animation-delay: 0.4s; }
 footer{
 	display: flex;
 	justify-content: center;
@@ -1009,6 +1013,7 @@ h5 {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
+
 .photo-wrapper:hover .social-icons a {
     animation: gentlePulse 2s infinite ease-in-out;
 }
@@ -1016,10 +1021,13 @@ h5 {
 .photo-wrapper:hover .social-icons a:nth-child(3) { animation-delay: 0.4s; }
 
 .socials .social div a {
+    transition: transform 0.3s ease;
+}
+.socials .social div a:hover {
     animation: gentlePulse 2s infinite ease-in-out;
 }
-.socials .social div a:nth-child(2) { animation-delay: 0.2s; }
-.socials .social div a:nth-child(3) { animation-delay: 0.4s; }
+.socials .social div a:nth-child(2):hover { animation-delay: 0.2s; }
+.socials .social div a:nth-child(3):hover { animation-delay: 0.4s; }
 	.port{
 	display: block;
 	background-color: #a9edf3;
