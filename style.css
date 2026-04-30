@@ -1276,11 +1276,11 @@ h1 {
 	padding-right: 65px;
 }
 .img6 {
-	padding-left: 50px;
+	padding-right: 190px;
 }
 .img7 {
-	padding-left: 140px;
-}
+	padding-right: 370px;
+	}
 .slide img:hover {
 	transform: scale(1.02);
 }
