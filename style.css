@@ -466,17 +466,8 @@ h5 {
 	padding-bottom: 20px;
 	text-align: center;
 }
-.text10 {
-	font-size: 20px;
-	padding-left: 30px;
-	font-family: none;
-}
 .img8 {
 	height: 3rem;
-}
-.text4 {
-	text-align: center;
-	font-size: 2rem;
 }
 .social {
 	width: 12rem;
@@ -485,25 +476,6 @@ h5 {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-}
-.r {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.fa {
-	width: 57rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.socials {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .contact{
     width: 100%;
@@ -875,23 +847,10 @@ h5 {
 	font-size: 20px;
 	padding-left: 30px;
 }
-.text9 {
-	font-size: 20px;
-	padding-left: 30px;
-	font-family: none;
-}
-.text7 {
-	font-size: 20px;
-	padding-bottom: 20px;
-	text-align: center;
-}
 .text10 {
 	font-size: 20px;
 	padding-left: 30px;
 	font-family: none;
-}
-.img8 {
-	height: 3rem;
 }
 .text4 {
 	text-align: center;
