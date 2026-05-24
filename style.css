@@ -19,6 +19,9 @@ footer{
 	flex-direction: column;
 	padding-bottom: 10px;
 }
+.active-voted {
+  color: red;
+}
 body {
 	background-color: #71e7eb63;
 }
