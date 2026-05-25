@@ -1290,6 +1290,8 @@ h1 {
 }
 .modal.open {
 	display: flex;
+	height: 100%;
+	width: 100%;
 }
 .modal img {
 	max-width: 95%;
